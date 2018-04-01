@@ -1,0 +1,129 @@
+    var counter = 1;
+    var x=1,y=1;
+    var limit = 10000;
+
+
+
+    function addInput(divName){
+         if (counter == limit)  {
+              alert('You have reached the limit of adding ' + counter + ' inputs');
+         }
+
+         else {
+              var newdiv = document.createElement('div');
+             // newdiv.innerHTML = 'Entry ' + (counter + 1) + ' <br><input type='text' name='myInputs[]'>';
+               newdiv.innerHTML="Audio Description"+x+"Path <input type='text' id='tst"+ x++ +"'> Time<select id='hrs"+ y +"' name='hrs'><option value='00'>00</option><option value='01'>01</option><option value='02'>02</option></select>&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;<select id='min"+ y +"' name='min'><option value='00'>00</option><option value='01'>01</option><option value='02'>02</option><option value='03'>03</option><option value='04'>04</option><option value='05'>05</option><option value='06'>06</option><option value='07'>07</option>  <option value='08'>08</option><option value='09'>09</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option><option value='32'>32</option><option value='33'>33</option><option value='34'>34</option><option value='35'>35</option><option value='36'>36</option><option value='37'>37</option><option value='38'>38</option><option value='39'>39</option><option value='40'>40</option><option value='41'>41</option><option value='42'>42</option><option value='43'>43</option><option value='44'>44</option><option value='45'>45</option><option value='46'>46</option><option value='47'>47</option><option value='48'>48</option><option value='49'>49</option><option value='50'>50</option><option value='51'>51</option><option value='52'>52</option><option value='53'>53</option><option value='54'>54</option><option value='55'>55</option><option value='56'>56</option><option value='57'>57</option><option value='58'>58</option><option value='59'>59</option></select>&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;<select id='sec"+ y +"' name='sec'><option value='00'>00</option><option value='01'>01</option><option value='02'>02</option><option value='03'>03</option><option value='04'>04</option><option value='05'>05</option><option value='06'>06</option><option value='07'>07</option><option value='08'>08</option><option value='09'>09</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option><option value='32'>32</option><option value='33'>33</option><option value='34'>34</option><option value='35'>35</option><option value='36'>36</option><option value='37'>37</option><option value='38'>38</option><option value='39'>39</option><option value='40'>40</option><option value='41'>41</option><option value='42'>42</option><option value='43'>43</option><option value='44'>44</option><option value='45'>45</option><option value='46'>46</option><option value='47'>47</option><option value='48'>48</option><option value='49'>49</option><option value='50'>50</option><option value='51'>51</option><option value='52'>52</option><option value='53'>53</option><option value='54'>54</option><option value='55'>55</option><option value='56'>56</option><option value='57'>57</option><option value='58'>58</option><option value='59'>59</option></select>&nbsp;&nbsp;&nbsp;&nbsp;,&nbsp;&nbsp;&nbsp;&nbsp;<select id='msec"+ y++ +"' name='msec'><option value='01'>01</option><option value='02'>02</option><option value='03'>03</option><option value='04'>04</option><option value='05'>05</option><option value='06'>06</option><option value='07'>07</option> <option value='08'>08</option><option value='09'>09</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option>  <option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option> <option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option>        <option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option><option value='32'>32</option><option value='33'>33</option><option value='34'>34</option><option value='35'>35</option><option value='36'>36</option><option value='37'>37</option>        <option value='38'>38</option><option value='39'>39</option><option value='40'>40</option><option value='41'>41</option><option value='42'>42</option><option value='43'>43</option><option value='44'>44</option><option value='45'>45</option><option value='46'>46</option><option value='47'>47</option>        <option value='48'>48</option><option value='49'>49</option><option value='50'>50</option><option value='51'>51</option><option value='52'>52</option><option value='53'>53</option><option value='54'>54</option><option value='55'>55</option><option value='56'>56</option><option value='57'>57</option>        <option value='58'>58</option><option value='59'>59</option><option value='60'>60</option><option value='61'>61</option><option value='62'>62</option><option value='63'>63</option><option value='64'>64</option><option value='65'>65</option><option value='66'>66</option><option value='67'>67</option>        <option value='68'>68</option><option value='69'>69</option><option value='70'>70</option><option value='71'>71</option><option value='72'>72</option><option value='73'>73</option><option value='74'>74</option><option value='75'>75</option><option value='76'>76</option><option value='77'>77</option>        <option value='78'>78</option><option value='79'>79</option><option value='80'>80</option><option value='81'>81</option><option value='82'>82</option><option value='83'>83</option><option value='84'>84</option><option value='85'>85</option><option value='86'>86</option><option value='87'>87</option>        <option value='88'>88</option><option value='89'>89</option><option value='90'>90</option><option value='91'>91</option><option value='92'>92</option><option value='93'>93</option><option value='94'>94</option><option value='95'>95</option><option value='96'>96</option><option value='97'>97</option><option value='98'>98</option><option value='99'>99</option>";                     
+          document.getElementById(divName).appendChild(newdiv);
+              counter++;
+         }
+    }
+    xml=''
+    function generate(divName,divName2,divName3,divName4){
+        //  var txtFile = '/home/muralidhar/Audio description placer/VD.txt';
+         //var file = new File(txtFile);
+          //alert('hi')
+          var hh=document.getElementById('hrs').value;
+          var mm=document.getElementById('min').value;
+          var ss=document.getElementById('sec').value;
+          var mp=document.getElementById('text1').value;
+          xml+='<Movie>'
+            xml+='<src>'
+            xml+='<path>'+mp+'</path>'
+            xml+='<hr>'+hh+'</hr>'
+            xml+='<min>'+mm+'</min>'
+            xml+='<sec>'+ss+'</sec></src>'
+          for (i=1;i<x;i++)
+          {
+            var a= document.getElementById('tst'+i).value;
+            var hh=document.getElementById('hrs'+i).value;
+            var mm=document.getElementById('min'+i).value;
+            var ss=document.getElementById('sec'+i).value;
+            var ms=document.getElementById('msec'+i).value;
+             
+            xml=xml+'<VD>'
+            xml+='<path>'+a+'</path>'
+            xml+='<hr>'+hh+'</hr>'
+            xml+='<min>'+mm+'</min>'
+            xml+='<sec>'+ss+'</sec>'	
+            xml+='<msec>'+ms+'</msec>'
+		 xml+='</VD>'
+            
+
+          }
+          xml+='</Movie>';
+          //file.open('w'); 
+          //file.writeln(xml);
+            //file.close();
+         xmltext=document.getElementById(divName);
+         //xmltext.placeholder=xml;
+         xmltext.value=xml;
+         produceHTML(divName2);
+         produceJS(divName3);
+         produceCss(divName4);
+                 // newdiv.innerHTML = 'Entry ' + (counter + 1) + ' <br><input type='text' name='myInputs[]'>';
+                // newdiv.innerHTML= 'XML <textarea rows='30' cols='30' id='xmltext' value='+xml+' ><textarea>';
+                //alert(newdiv.innerHTML)
+        }
+        function produceHTML(divName2)
+        {	
+			path=document.getElementById('text1')
+			alert(path.value)
+        	htmltext="<!DOCTYPE html>\n <html lang='en'>\n	<head><meta charset='utf-8' /> \n<title>Project AD player</title>	\n<link href='project.css' rel='stylesheet' />\n<script src='project.js'>\n</script>\n</head>\n<body><div id='media-player'>\n<video id='media-video'  controls>\n <source  id='video'  src='"+path.value+"' type='video/mp4' alt='No Video Supported'></video><div id='media-controls'>\n<button id='play-pause-button' class='play' title='play' onclick='togglePlayPause();'>play</button>\n<button id='stop-button' class='stop' title='stop' onclick='stopPlayer();'>Stop</button><progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>\n<button id='volume-inc-button' class='volume-plus' title='increase volume' onclick='changeVolume(\"+\");'>V+</button>\n<button id='volume-dec-button' class='volume-minus' title='decrease volume' onclick='changeVolume(\"-\");'>V-</button>\n<button id='mute-button' class='mute' title='mute' onclick='toggleMute(\"true\");'>Mute</button>\n<button id='Audio-Description' class='AD' title='Audio-Description' onclick='enabledescriptions()'>AD Off</button>\n</div>\n</div>\n\n</body>\n	</html>"
+        	//htmltext="<!DOCTYPE html> <html lang='en'>	<head><meta charset='utf-8' /> <title>Project AD player</title>	<link href='project.css' rel='stylesheet' /><script src='film5.js'></script></head><body><div id='media-player'><video id='media-video'  controls> <source  id='video' src='Break_the_Barrier.mp4' type='video/mp4' alt='No Video Supported'></video> <div id='media-controls'> <button id='play-pause-button' class='play' title='play' onclick='togglePlayPause();'>play</button><button id='stop-button' class='stop' title='stop' onclick='stopPlayer();'>Stop</button><progress id='progress-bar' min='0' max='100' value='0'>0% played</progress><button id='volume-inc-button' class='volume-plus' title='increase volume' onclick='changeVolume("+");'>V+</button><button id='volume-dec-button' class='volume-minus' title='decrease volume' onclick='changeVolume("-");'>V-</button><button id='mute-button' class='mute' title='mute' onclick='toggleMute('true');'>Mute</button>	<button id='Audio-Description' class='AD' title='Audio-Description' onclick='enabledescriptions()'>AD Off</button></div></div></div></body></html>";
+        	html=document.getElementById(divName2);
+        	html.value=htmltext
+        }
+
+        function produceJS(divName3)
+        {	
+jstext="document.addEventListener('DOMContentLoaded', function() { initialiseMediaPlayer(); }, false);\n\nvar mediaPlayer;\nvar playPauseBtn;\nvar muteBtn,time,srce;\nvar flag=0;\n"
+for (i=1;i<counter;i++){
+	jstext+="ad"+i+"=0;\n"
+}
+jstext+="\nvar progressBar,audiobut;\nvar aud=1;\nvar hh=0,mm=0,sec=0,ctime=0;\nfunction initialiseMediaPlayer() {\n\n mediaPlayer = document.getElementById('media-video');\n	\n playPauseBtn = document.getElementById('play-pause-button'); \n	muteBtn = document.getElementById('mute-button');\n progressBar = document.getElementById('progress-bar');\naudiobut=document.getElementById('Audio-Description');\n mediaPlayer.controls = false;\n \n mediaPlayer.addEventListener('timeupdate', updateProgressBar, false); \n \n mediaPlayer.addEventListener('play', function() { \n  \n changeButtonType(playPauseBtn, 'pause');}, false); \n mediaPlayer.addEventListener('pause', function() {\n \n changeButtonType(playPauseBtn, 'play'); }, false);\n \n mediaPlayer.addEventListener('volumechange', function(e) { \n  \n if (mediaPlayer.muted) changeButtonType(muteBtn, 'unmute');\n else \n changeButtonType(muteBtn, 'mute');\n }, false);	\nmediaPlayer.addEventListener('ended', function() {\n if(flag== 0){  \n"
+for (i=1;i<counter;i++){
+	jstext+="ad"+i+"=0;\n"
+}
+jstext+="\n this.pause();\n		}\n		else{ \nflag=0; aud=1;			document.getElementById('Audio-Description').style.visibility = 'visible';\n changeButtonType(audiobut,'AD Off');\n mediaPlayer.src=srce; \nmediaPlayer.load(); \nmediaPlayer.play();\n mediaPlayer.currentTime=time;\n percentage = Math.floor((100 / mediaPlayer.duration) * mediaPlayer.currentTime);\n \n progressBar.value = percentage; } },false);	}\n function togglePlayPause() {\n \n if (mediaPlayer.paused || mediaPlayer.ended) {\n  \n changeButtonType(playPauseBtn, 'pause');\n\n mediaPlayer.play(); }\nelse {\n\nchangeButtonType(playPauseBtn, 'play');\n\n mediaPlayer.pause();\n}\n}\n \n function stopPlayer() {\n if(flag== 0){ \nmediaPlayer.pause();\nmediaPlayer.currentTime = 0;}\n else{ \nflag=0; \naud=1;\ndocument.getElementById('Audio-Description').style.visibility = 'visible';\nchangeButtonType(audiobut,'AD Off');\n mediaPlayer.src=srce;\n mediaPlayer.load();\n mediaPlayer.play();\n mediaPlayer.currentTime=time;\n percentage = Math.floor((100 / mediaPlayer.duration) * mediaPlayer.currentTime);\n  \nprogressBar.value = percentage; \n}}";
+jstext+=" \n function changeVolume(direction) {\n 	if (direction === '+') mediaPlayer.volume += mediaPlayer.volume == 1 ? 0 : 0.1;"
+jstext+="\n else mediaPlayer.volume -= (mediaPlayer.volume == 0 ? 0 : 0.1);"
+			jstext+="\n mediaPlayer.volume = parseFloat(mediaPlayer.volume).toFixed(1);\n}"
+		
+			jstext+="\nfunction toggleMute() {\n if (mediaPlayer.muted) {\n  \nchangeButtonType(muteBtn, 'mute');"
+			jstext+="\n	 mediaPlayer.muted = false;}\n	else {\n		\n		changeButtonType(muteBtn, 'unmute');\n \nmediaPlayer.muted = true;}}"
+			jstext+="\n function replayMedia() {\n resetPlayer();\n	mediaPlayer.play();\n}"
+jstext+="\nfunction updateProgressBar() {	\n var percentage = Math.floor((100 / mediaPlayer.duration) * mediaPlayer.currentTime); \n"
+jstext+="\nprogressBar.value = percentage;\nif(flag==0){\n		ctime=parseInt(mediaPlayer.currentTime*100);\n		if(ctime>=100){\n			sec=parseInt(ctime/100);\n			ctime=ctime%100;"
+jstext+="\n}\nif(sec>=60){\nmm=parseInt(sec/60);\nsec=sec%60\n}\nif(mm>=60){\n	hh=parseInt(mm/60);\nmm=mm%60}}"
+timer="";
+for (i=1;i<counter;i++)
+{
+    var a= document.getElementById('tst'+i).value;
+	
+    var hh=document.getElementById('hrs'+i).value;
+    var mm=document.getElementById('min'+i).value;
+    var ss=document.getElementById('sec'+i).value;
+    var ms=document.getElementById('msec'+i).value;
+	timer+="\n if(hh=="+hh+"&& mm=="+mm+"&& sec=="+ss+"&& ctime >="+ms+"&& aud ==1) \n {if (flag==0 && ad"+i+"==0){ad"+i+"=1;\nflag=1;aud=0;		changeButtonType(audiobut,'AD On');\n		document.getElementById('Audio-Description').style.visibility = 'hidden';\n		time=mediaPlayer.currentTime;\nsrce=document.getElementById('video').src;\nmediaPlayer.src='"+a+"'\nmediaPlayer.load();\nmediaPlayer.play();		} }"
+}
+
+
+//btntext="progressBar.innerHTML = percentage + '% played'; }"
+btntext="}\n\nfunction changeButtonType(btn, value) {\n	btn.title = value;\n	btn.innerHTML = value;\nbtn.className = value;\n}"
+btntext+="\n\nfunction loadVideo() {\n 	for (var i = 0; i < arguments.length; i++) {\n		var file = arguments[i].split('.');\n		var ext = file[file.length - 1];"
+btntext+="\n\n		if (canPlayVideo(ext)) {	\n		\n			resetPlayer();\n mediaPlayer.src = arguments[i];\n mediaPlayer.load();\nbreak;}	}}"
+btntext+="\n \n function canPlayVideo(ext) {\n	var ableToPlay = mediaPlayer.canPlayType('video/' + ext);\n if (ableToPlay == '') return false;\n else return true;}"
+		btntext+="\n\n function enabledescriptions(){\n if(aud==0){\n		aud=1;\n		changeButtonType(audiobut,'AD Off');\n	}		else{\n		aud=0;\n changeButtonType(audiobut,'AD On');}}"
+jstext+="\n"+timer+"\n\n"+btntext;
+js=document.getElementById(divName3);
+js.value=jstext;
+        }
+      function produceCss(divName4)
+      {
+      	csstext=" 	body { font-family:'verdana'; }\n #media-player {\n	float:left;\n	padding:1em 1em .5em;\n	background-color:#333;}"
+      	csstext+="\nvideo {\n	border:1px solid #2e52a4;\n	width:600px;\n	height:500px;\n	background:#000;\n}"
+		csstext+="\n	progress {\n	color:#fff;	\nfont-size:12px;\n	width:300px;\n	height:16px;\n	border:none;\n	margin-right:5px;\n	background:#434343;}"
+		csstext+="\nprogress::-moz-progress-bar { background:#2e52a4; }"
+		css=document.getElementById(divName4);
+    css.value=csstext;
+      }

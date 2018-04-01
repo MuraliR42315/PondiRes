@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+ <html lang='en'>
+	<head><meta charset='utf-8' /> 
+<title>Project AD player</title>	
+<link href='project.css' rel='stylesheet' />
+<script src='project.js'>
+</script>
+</head>
+<body><div id='media-player'>
+<video id='media-video'  controls>
+ <source  id='video'  src='C:\film5 (copy)\Break_the_Barrier.mp4' type='video/mp4' alt='No Video Supported'></video><div id='media-controls'>
+<button id='play-pause-button' class='play' title='play' onclick='togglePlayPause();'>play</button>
+<button id='stop-button' class='stop' title='stop' onclick='stopPlayer();'>Stop</button><progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+<button id='volume-inc-button' class='volume-plus' title='increase volume' onclick='changeVolume("+");'>V+</button>
+<button id='volume-dec-button' class='volume-minus' title='decrease volume' onclick='changeVolume("-");'>V-</button>
+<button id='mute-button' class='mute' title='mute' onclick='toggleMute("true");'>Mute</button>
+<button id='Audio-Description' class='AD' title='Audio-Description' onclick='enabledescriptions()'>AD Off</button>
+</div>
+</div>
+
+</body>
+	</html>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<script type="text/javascript">
+function download()
+{
+window.open('project.xml');
+window.open('project.txt');
+window.open('project.css');
+window.open('project.js');
+}
+</script> 
+</head>
+<body>
+<?php
+$xml=$_POST['myTextarea'];
+$html=$_POST['myTextarea2'];
+$js=$_POST['myTextarea3'];
+$css=$_POST['myTextarea4'];
+$myfile = fopen("project.xml", "w") or die("Unable to open file!");
+fwrite($myfile, $xml);
+fclose($myfile);
+$myfile = fopen("project.txt", "w") or die("Unable to open file!");
+fwrite($myfile, $html);
+fclose($myfile);
+$myfile = fopen("project.js", "w") or die("Unable to open file!");
+fwrite($myfile, $js);
+fclose($myfile);
+$myfile = fopen("project.css", "w") or die("Unable to open file!");
+fwrite($myfile, $css);
+fclose($myfile);
+?>
+<table style='color:#373332; align:center;'>
+<tr>
+<td> Download Files </td><td>
+<input type="button" value="Download Files" onClick="download();"/></td>
+</tr>
+</table>
+</body>
+</html> 
